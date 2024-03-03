@@ -21,8 +21,7 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
             <h1 class="logo me-auto me-lg-0"><a href="index.html">Restaurantly</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
@@ -31,9 +30,9 @@
                     <li><a class="nav-link scrollto" asp-area="" asp-controller="Menu" asp-action="Menu">Menu</a></li>
                     <li><a class="nav-link scrollto" asp-area="" asp-controller="Special" asp-action="Special">Specials</a></li>
                     <li><a class="nav-link scrollto" asp-area="" asp-controller="Event" asp-action="Event">Events</a></li>
-                    <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
+                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Chef" asp-action="Chef">Chefs</a></li>
                     <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-                    <li class="dropdown">
+                    @* <li class="dropdown">
                         <a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
@@ -51,7 +50,7 @@
                             <li><a href="#">Drop Down 3</a></li>
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
-                    </li>
+                    </li> *@
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -112,8 +111,8 @@
                 </div>
 
             </div>
-        </section><!-- End About Section -->
-        <!-- ======= Why Us Section ======= -->
+        </section>
+
         <section id="why-us" class="why-us">
             <div class="container" data-aos="fade-up">
 
@@ -151,14 +150,10 @@
                 </div>
 
             </div>
-        </section><!-- End Why Us Section -->
+        </section>
        
-        
-        
-        <!-- ======= Events Section ======= -->
-        @* <!-- End Events Section -->
-        <!-- ======= Book A Table Section ======= -->
-        @* <section id="book-a-table" class="book-a-table">
+                     
+         <section id="book-a-table" class="book-a-table">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -206,7 +201,7 @@
                 </form>
 
             </div>
-        </section> *@
+        </section> 
 
 
         <section id="testimonials" class="testimonials section-bg">
@@ -231,7 +226,7 @@
                                 <h3>Saul Goodman</h3>
                                 <h4>Ceo &amp; Founder</h4>
                             </div>
-                        </div><!-- End testimonial item -->
+                        </div>
 
                         <div class="swiper-slide">
                             <div class="testimonial-item">
@@ -244,7 +239,7 @@
                                 <h3>Sara Wilsson</h3>
                                 <h4>Designer</h4>
                             </div>
-                        </div><!-- End testimonial item -->
+                        </div>
 
                         <div class="swiper-slide">
                             <div class="testimonial-item">
@@ -257,7 +252,7 @@
                                 <h3>Jena Karlis</h3>
                                 <h4>Store Owner</h4>
                             </div>
-                        </div><!-- End testimonial item -->
+                        </div>
 
                         <div class="swiper-slide">
                             <div class="testimonial-item">
@@ -270,8 +265,7 @@
                                 <h3>Matt Brandon</h3>
                                 <h4>Freelancer</h4>
                             </div>
-                        </div><!-- End testimonial item -->
-
+                        </div>
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <p>
@@ -290,8 +284,8 @@
                 </div>
 
             </div>
-        </section><!-- End Testimonials Section -->
-        <!-- ======= Gallery Section ======= -->
+        </section>
+
         <section id="gallery" class="gallery">
 
             <div class="container" data-aos="fade-up">
@@ -372,76 +366,10 @@
                 </div>
 
             </div>
-        </section><!-- End Gallery Section -->
-        <!-- ======= Chefs Section ======= -->
-        @* <section id="chefs" class="chefs">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Chefs</h2>
-                    <p>Our Proffesional Chefs</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                            <img src="img/chefs/chefs-1.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Walter White</h4>
-                                    <span>Master Chef</span>
-                                </div>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="member" data-aos="zoom-in" data-aos-delay="200">
-                            <img src="img/chefs/chefs-2.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Patissier</span>
-                                </div>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="member" data-aos="zoom-in" data-aos-delay="300">
-                            <img src="img/chefs/chefs-3.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>William Anderson</h4>
-                                    <span>Cook</span>
-                                </div>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End Chefs Section --> *@
-        <!-- ======= Contact Section ======= -->
+        </section>
+       
+       
+      
         <section id="contact" class="contact">
             <div class="container" data-aos="fade-up">
 
@@ -522,8 +450,8 @@
                 </div>
 
             </div>
-        </section><!-- End Contact Section -->
+        </section>
 
-    </main><!-- End #main -->
+    </main>
 </body>
 
