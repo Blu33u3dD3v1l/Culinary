@@ -8,5 +8,19 @@ namespace Culinary.Controllers
         {
             return View();
         }
+        public IActionResult Salad()
+        {
+            return View();
+        }
+
+        public IActionResult Starter()
+        {
+            return View();
+        }
+
+        public IActionResult Specialty()
+        {
+            return View();
+        }
     }
 }

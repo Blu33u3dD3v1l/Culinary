@@ -247,7 +247,7 @@ h6 {
         color: #fff;
         white-space: nowrap;
         transition: 0.3s;
-        font-size: 14px;
+        font-size: 18px;
     }
 
         .navbar a i,
@@ -1717,6 +1717,3 @@ section {
         color: #fff;
     }
 
-.mymeny {
-    margin-top: 100px;
-}
