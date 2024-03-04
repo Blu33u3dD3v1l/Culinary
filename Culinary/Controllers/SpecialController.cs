@@ -8,5 +8,25 @@ namespace Culinary.Controllers
         {
             return View();
         }
+
+        public IActionResult Special2()
+        {
+            return View();
+        }
+
+        public IActionResult Special3()
+        {
+            return View();
+        }
+
+        public IActionResult Special4()
+        {
+            return View();
+        }
+
+        public IActionResult Special5()
+        {
+            return View();
+        }
     }
 }
