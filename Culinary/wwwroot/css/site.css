@@ -107,7 +107,7 @@ h6 {
 --------------------------------------------------------------*/
 #topbar {
     height: 40px;
-    font-size: 14px;
+    font-size: 16px;
     transition: all 0.5s;
     z-index: 996;
 }
@@ -149,6 +149,13 @@ h6 {
                 color: rgba(255, 255, 255, 0.5);
                 content: "/";
             }
+    #topbar
+    .languages a:hover,
+    .languages .active,
+    .languages .active:focus,
+    .languages li:hover > a {
+        color: #d9ba85;
+    }
 
 /*--------------------------------------------------------------
 # Header

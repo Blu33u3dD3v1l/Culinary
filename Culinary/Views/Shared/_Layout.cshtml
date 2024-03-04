@@ -23,18 +23,7 @@
       
         <h1 style="color: #cda45e"><span>Divine Ambrosia</span></h1>
 
-       @*  <div id="topbar" class="d-flex align-items-center fixed-top">
-            <div class="container d-flex justify-content-center">
-                <div class="languages d-none d-md-flex align-items-center">
-                    <ul>
-                        <li>En</li>
-                        <li><a href="#">De</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div> *@
-
-        <nav id="navbar" class="navbar order-last order-lg-0">
+        <nav id="navbar" class="navbar order-last order-lg-0 align-items-center">
             <ul>
                 <li><a class="nav-link scrollto active" href="/">Home</a></li>
                 <li><a class="nav-link scrollto" asp-area="" asp-controller="Menu" asp-action="Menu">Menu</a></li>
@@ -45,6 +34,17 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
+
+        <div id="topbar" class="d-flex align-items-center">
+            <div class="container d-flex justify-content-center">
+                <div class="languages d-none d-md-flex align-items-center">
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         @*  <a href="/" class="book-a-table-btn scrollto d-none d-lg-flex"><p style="color: white" class="mb-0">Book a table</p></a> *@
 
     </div>
