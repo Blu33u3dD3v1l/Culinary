@@ -1,26 +1,45 @@
 ﻿@using Microsoft.AspNetCore.Identity
+@using MyGymWeb.Data.Models
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
-<ul class="navbar-nav">
+
 @if (SignInManager.IsSignedIn(User))
 {
-    <li class="nav-item">
+    @* <li class="nav-item">
         <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
-    </li>
-    <li class="nav-item">
+    </li> *@
+@*     <li class="nav-item">
         <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
             <button  type="submit" class="nav-link btn btn-link text-dark">Logout</button>
         </form>
-    </li>
+    </li> *@
+
+    <div id="topbar" class="d-flex align-items-center">
+        <div class="container d-flex justify-content-center">
+            <div class="languages d-none d-md-flex align-items-center">
+                <ul>
+                        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+
+                            <button type="submit" class="nav-link btn btn-link">Logout</button>
+                        </form>
+
+                </ul>
+            </div>
+        </div>
+    </div>
 }
 else
 {
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
-    </li>
+        <div id="topbar" class="d-flex align-items-center">
+            <div class="container d-flex justify-content-center">
+                <div class="languages d-none d-md-flex align-items-center">
+                    <ul>
+                        <li> <a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+                        <li> <a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 }
-</ul>
+

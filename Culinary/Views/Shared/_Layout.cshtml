@@ -34,17 +34,7 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
-
-        <div id="topbar" class="d-flex align-items-center">
-            <div class="container d-flex justify-content-center">
-                <div class="languages d-none d-md-flex align-items-center">
-                    <ul>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Register</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <partial name="_LoginPartial" />
         @*  <a href="/" class="book-a-table-btn scrollto d-none d-lg-flex"><p style="color: white" class="mb-0">Book a table</p></a> *@
 
     </div>
@@ -125,4 +115,6 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <script src="js/site.js"></script>
+
+@await RenderSectionAsync("Scripts", required: false)
 

@@ -139,6 +139,12 @@ h6 {
             color: white;
         }
 
+        #topbar .languages ul button {
+            color: white;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
         #topbar .languages ul li + li {
             padding-left: 10px;
         }
@@ -156,6 +162,13 @@ h6 {
     .languages li:hover > a {
         color: #d9ba85;
     }
+        #topbar
+        .languages button:hover,
+        .languages .active,
+        .languages .active:focus,
+        .languages li:hover > button {
+            color: #d9ba85;
+        }
 
 /*--------------------------------------------------------------
 # Header
@@ -1724,3 +1737,22 @@ section {
         color: #fff;
     }
 
+#login-submit {
+    background-color: #cda45e;
+    border-color: #cda45e;
+}
+
+    #login-submit:hover {
+        background-color: #b38e50;
+        border-color: #b38e50;
+    }
+
+#registerSubmit {
+    background-color: #cda45e;
+    border-color: #cda45e;
+}
+
+#registerSubmit:hover {
+    background-color: #b38e50;
+    border-color: #b38e50;
+}
